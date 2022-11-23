@@ -5,14 +5,21 @@
  a = -9 b = -3 -> max = -3
  */
 
-int a = new int();
-Console.WriteLine("Введите первое число");
-a = Convert.ToInt32(Console.ReadLine());
-int max = a;
-int b = new int();
-Console.WriteLine("Введите второе число");
-b = Convert.ToInt32(Console.ReadLine());
-if (a > max ) max = a;
-if (b > max ) max = b;
-Console.Write("max = ");
-Console.WriteLine(max);
+Console.WriteLine("Введите первое число: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите второе число: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+if (firstNumber > secondNumber)
+{
+    Console.WriteLine( firstNumber+ " > " + secondNumber);
+}
+else if (secondNumber > firstNumber)
+{
+    Console.WriteLine( secondNumber+ " > " + firstNumber);
+}
+else
+{
+    Console.WriteLine( secondNumber+ " = " + firstNumber);
+}
